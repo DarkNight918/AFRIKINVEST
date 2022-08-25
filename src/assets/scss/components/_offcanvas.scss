@@ -1,0 +1,14 @@
+.modal-dialog {
+    &.modal-lg {
+        max-width: 660px;
+    }
+    
+    .modal-content {
+        .modal-header {
+            padding: 50px 30px;
+        }
+        .modal-body {
+            padding: 50px 30px;
+        }
+    }
+}

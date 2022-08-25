@@ -1,0 +1,367 @@
+.section-hero-real-estate {
+    padding: 356px 0px 130px;
+    margin-bottom: 68px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../img/real-estate-bg.png') center center no-repeat;
+    background-size: cover;    
+
+    p {
+        margin-bottom: 0px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-transform: uppercase;
+        text-shadow: 0px 4px 16px rgba(51, 51, 51, 0.43);
+        color: #FFFFFF;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+        font-family: 'Buda', cursive;
+        font-size: 113px;
+        font-weight: 300;
+        line-height: 106px;
+        color: #EFEFEF;
+        text-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.43);
+    }
+
+    .search-box {
+        max-width: 400px;
+        margin: 0px auto;
+        
+        .search-form {
+            .input-group {
+                border: 1px solid #fff;
+                border-radius: 43px;
+
+                input {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    letter-spacing: 0.03em;
+                    padding: 8px 0px 8px 18px;
+                    border: none;
+                    border-radius: 43px;
+                    color: #FFF;
+                    background-color: transparent;
+                }
+
+                .input-group-text {
+                    padding: 0px 28px;
+                    border: none;
+                    border-radius: 45px;
+                    background: url('../../img/icons/search-24.svg') center center no-repeat;
+                    background-size: 14.81px;
+                    background-color: transparent;
+                }                
+            }
+
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #C0C0C0;
+                opacity: 1; /* Firefox */
+            }
+              
+            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: #C0C0C0;
+            }
+              
+            ::-ms-input-placeholder { /* Microsoft Edge */
+                color: #C0C0C0;
+            }
+
+            p {
+                margin-bottom: 0px;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 21.26px;
+                letter-spacing: 0.03em;
+                color: #FFF;
+            }
+        }        
+    }
+}
+
+.section-prestigious-properties {
+    margin-bottom: 90px;        
+    
+    .section-title {
+        h1 {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+    }
+
+    .sponsored {
+        margin-bottom: 90px;
+        
+        .info-box {
+            padding-right: 0px;
+            
+            .content {
+                padding: 56px 0px 40px;
+                text-align: center;
+                border: 1px solid rgba(40, 14, 14, 0.2);  
+
+                h1 {
+                    margin-bottom: 18px;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 27px;
+                    font-weight: 400;
+                    line-height: 38px;
+                    color: #151515;
+                }       
+                
+                p {
+                    margin-bottom: 56px;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 22px;
+                    text-transform: uppercase;
+                    color: #151515;
+                }
+
+                .controls {
+                    display: flex;
+                    flex-direction: row;
+                    grid-column-gap: 14px;
+                    column-gap: 14px; 
+                    justify-content: center;
+                    align-items: center;
+                    
+                    .btn {
+                        margin-bottom: 8px;
+                    }
+
+                    .btn-primary {
+                        padding: 14px 74px;
+                        color: #FFF;
+                        background: #080A0C;
+                        border: 0.5px solid #080A0C;
+                    }
+    
+                    .btn-outline {
+                        padding: 14px 74px;
+                        color: #151515;
+                        border: 1px solid #999999;
+                    }
+                }                
+            }            
+        }
+
+        .img-box {
+            position: relative;
+            padding-left: 0px;
+            
+            .badge {
+                position: absolute;
+                right: 8px;
+                top: 23.31px;
+                width: 60.52px;
+                height: 24.45px;
+                padding: 1.22px 12.59px 1.22px 13.93px; 
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22.08px;
+                letter-spacing: 0.1em;
+                border: 1px solid #E5E5E5;
+                border-radius: 6px 0px 0px 7px;
+                color: #FFF;
+            }
+    
+            .controls {
+                padding: 0px 26px 14px 26px;
+                
+                .video {
+                    width: 23.1px;
+                    height: 21.57px;
+                    border-radius: 6px;
+                    background: #E5E5E5 url('../../img/icons/video-24.svg') center center no-repeat;
+                    background-size: 13.89px;  
+                }
+    
+                .favorite {
+                    width: 31.89px;
+                    height: 31.89px;
+                    border-radius: 37px;
+                    background: #E5E5E5 url('../../img/icons/heart-24.svg') center center no-repeat;
+                    background-size: 16px;                    
+                }
+              }
+        }
+    }
+
+    .card {
+        margin-bottom: 90px;
+
+        .card-body {
+            padding: 0;
+
+            .project-img {
+                .controls {
+                    padding: 0px 18px 14px 26px;
+                    
+                    .video {
+                        width: 23.1px;
+                        height: 21.57px;
+                        border-radius: 5.6px;
+                        background: #E5E5E5 url('../../img/icons/video-24.svg') center center no-repeat;
+                        background-size: 13.89px;  
+                    }
+    
+                    .favorite {
+                        width: 31.89px;
+                        height: 31.89px;
+                        border-radius: 37px;
+                        background: #E5E5E5 url('../../img/icons/heart-24.svg') center center no-repeat;
+                        background-size: 16px;                    
+                    }
+                }
+            }
+        }
+
+        .card-footer {
+            padding: 36px 0px 0px;
+            background-color: transparent;
+
+            h2 {
+                margin-bottom: 4px;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 25px;
+                letter-spacing: 0.03em;
+                color: #151515;                
+            }
+
+            h3 {
+                margin-bottom: 0px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0.03em;
+                color: #151515;
+            }
+
+            ul {
+                display: flex;
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                grid-column-gap: 10px;
+                column-gap: 10px;
+                
+                li {
+                    display: list-item;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 22px;
+                    color: #999999;   
+                    &:not(:first-child)::before {
+                        padding-right: 10px;
+                        content: "|";
+                    }                 
+                }
+            }
+            
+            .chart {
+                margin-right: 14px;
+                width: 97.52px;
+                height: 15.89px;
+            }
+
+            .btc {
+                i {
+                    width: 18.76px;
+                    height: 18.09px;
+                    margin-right: 5.34px;
+                    border-radius: 50%;
+                    
+                    background: #EAB300 url('../../img/icons/btc.svg') center center no-repeat;
+                    background-size: 9.62px 12.85px;  
+                }
+
+                h2 {
+                    margin-bottom: 0;
+                    color: #EAB300; 
+                }
+            }
+        }
+    }
+}
+
+.section-luxary-homes-blog {
+    margin-bottom: 90px;
+
+    .section-title {
+        h1 {
+            margin-bottom: 4px;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 38px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #151515;
+        }
+    }
+
+    .owl-nav {
+        margin-top: 60px;
+
+        .owl-prev, .owl-next {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #C4C4C4;
+            border-radius: 50% !important;               
+        }
+
+        .owl-prev {
+            background: transparent url('../../img/icons/prev.svg') center center no-repeat !important;
+            background-size: 12px;
+        }
+
+        .owl-next {
+            background: transparent url('../../img/icons/next.svg') center center no-repeat !important;
+            background-size: 12px;
+        }
+    }
+    
+    .blog-item {
+        position: relative;
+        .content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0px 24px 24px;
+            overflow: hidden;
+            
+            .title {
+                margin-bottom: 16px;
+                height: 102px;
+                
+                h2 {
+                    font-family: 'Buda', cursive;
+                    font-size: 31px;
+                    font-weight: 300;
+                    line-height: 34px;
+                    color: #FFFFFF;                
+                }
+            }
+
+            .description {
+                padding-right: 90px;
+                height: 66px;
+
+                p {
+                    margin-bottom: 0px;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 22px;
+                    color: #FFF2F2;
+                    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+                }
+            }            
+        }
+    }
+}

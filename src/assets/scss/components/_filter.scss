@@ -1,0 +1,77 @@
+.filter {
+    ul {
+        display: flex;
+        margin-bottom: 30px;
+        padding: 0px;
+        list-style: none;
+        grid-column-gap: 34px;
+        column-gap: 34px;
+
+        li {
+            a {
+                display: block;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                i {
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    vertical-align: middle;
+
+                    &.filter {
+                        margin-right: 8px;
+                        background: url('../../img/icons/filter.svg') left center no-repeat;
+                        background-size: 17px 17px;
+                    }
+
+                    &.notification {
+                        margin-right: 8px;
+                        background: url('../../img/icons/notification.svg') left center no-repeat;
+                        background-size: 16px;
+                    }
+
+                    &.drop-down {
+                        margin-left: 8px;
+                        background: url('../../img/icons/drop-down.svg') right center no-repeat;
+                        background-size: 10px;
+                    }
+                }
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &.tags {
+            flex-wrap: wrap;
+            justify-content: center;
+            grid-column-gap: 12px;
+            column-gap: 12px;
+            
+            li {
+                display: list-item;
+                margin-bottom: 8px;
+                white-space: nowrap;
+                
+                a {
+                    height: 26px;
+                    padding: 2px 16px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-align: center;
+                    border: 1px solid #C4C4C4;
+                    border-radius: 74px;
+                    color: #151515;
+                }
+            }
+        }
+        
+    }
+}

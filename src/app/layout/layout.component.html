@@ -1,0 +1,231 @@
+<div class="wrapper">
+    <header id="header" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" routerLink="/">
+          <img src="../assets/img/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav main mx-md-auto">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="real-estate" >Real Estate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="senegal">Lifestyle in Senegal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Safety Payment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="luxury-news">Luxury News</a>
+            </li>
+          </ul>        
+        </div>
+        <div class="side-nav">
+          <ul class="navbar-nav side">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarCrypto" role="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Crypto
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarCrypto">
+                <li *ngFor="let crypto of cryptos">
+                  <a class="dropdown-item" [class.selected]="crypto === selectedCrypto" (click)="onSelect(crypto)">
+                    <img src="../assets/img/icons/{{crypto}}.png">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{crypto}}
+                  </a>
+                </li>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sell</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="account">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link global" href="#">
+                <img src="../assets/img/icons/globe-24.svg">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  
+    <footer id="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col-md-8 col-lg-6">
+                <div class="row">
+                  <div class="col-6 col-md-3">
+                    <ul>
+                      <li><a href="#">Real Estate</a></li>
+                      <li><a href="#">Popular posts</a></li>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Investment</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <h3>CATEGORIES</h3>
+                    <ul>
+                      <li><a href="#">Apartmanets</a></li>
+                      <li><a href="#">Villas</a></li>
+                      <li><a href="#">Houses</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <h3>CATALOG</h3>
+                    <ul>
+                      <li><a href="#">All sales</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <h3>FOR BUSINESS</h3>
+                    <ul>
+                      <li><a href="#">Safety Payment</a></li>
+                      <li><a href="#">Partner</a></li>
+                      <li><a href="#">Linking</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-6">
+                <div class="settings">
+                  <h3>SETTINGS</h3>
+        
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          English
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              First checkbox
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              Second checkbox
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              Third checkbox
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              Fourth checkbox
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Bitcoin - crypto valute
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              First checkbox
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              Second checkbox
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              Third checkbox
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              Fourth checkbox
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Square Meter — m²/Hectare
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              First checkbox
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              Second checkbox
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              Third checkbox
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              Fourth checkbox
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-12">
+                <a class="logo" routerLink="/">
+                  <img src="../assets/img/logo.png">
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="footer-bottom">
+            <div class="row">
+              <div class="col-md-6 social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Youtube</a>              
+              </div>
+              <div class="col-md-6 copyright d-flex justify-content-md-end">
+                <p>Copyright © 2022 afrikinvest</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+  </div>

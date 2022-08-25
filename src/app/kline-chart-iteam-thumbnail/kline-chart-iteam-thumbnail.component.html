@@ -1,0 +1,33 @@
+<svg class="chart1" viewBox="0 0 2000 1000" preserveAspectRatio="none">
+    <defs>
+      <filter id="k-line-glow-positive">
+        <feFlood result="flood" [attr.floodColor]="lineColor" floodOpacity=".8"></feFlood>
+        <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
+        <feMorphology in="mask" result="dilated" operator="dilate" radius="3"></feMorphology>
+        <feGaussianBlur in="dilated" result="blurred" stdDeviation="8"></feGaussianBlur>
+        <feMerge>
+          <feMergeNode in="blurred"></feMergeNode>
+          <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+      </filter>
+    </defs>
+    <g filter="url(#k-line-glow-positive)" *ngIf="xLength">
+        <polyline
+            *ngIf="diff"
+            vector-effect="non-scaling-stroke"
+            [attr.points]="pointArray"
+            [attr.stroke]="lineColor"
+            fill="none"
+        />
+        <line
+            *ngIf="!diff"
+            x1="0"
+            y1="499.9" 
+            x2="2000"
+            y2="500"
+            [attr.stroke]="lineColor"
+            fill="none"
+            strokeWidth="16"
+      ></line>
+    </g>
+  </svg>

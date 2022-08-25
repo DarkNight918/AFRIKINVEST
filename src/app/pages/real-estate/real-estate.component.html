@@ -1,0 +1,171 @@
+<section class="section-hero-real-estate">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 m-auto text-center">
+                <p>Real Estate</p>
+                <h1>Discover</h1>
+
+                <div class="search-box">
+                    <form id="search-form" class="search-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Region  / Zip  /  Price....">
+                            <span class="input-group-text"></span>
+                        </div>                    
+                    </form>  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-prestigious-properties">
+    <div class="container">
+        <div class="section-title">
+            <h1>Prestigious properties in Senegal</h1>
+        </div>
+
+        <app-filter></app-filter>
+        
+        <div class="row sponsored">
+            <div class="col-lg-6 info-box">
+                <div class="content h-100">
+                    <h1>Luxury home in Dakar</h1>
+                    <p>Route des Almadies, Dakar</p>
+
+                    <div class="controls">
+                        <a class="btn btn-primary">Details</a>
+                        <a class="btn btn-outline">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 img-box">
+                <span class="badge">NEW</span>
+                <img class="project-img img-responsive h-100" src="../../../assets/img/sponsored-property.png">
+                <div class="controls d-flex align-items-center position-absolute start-0 end-0 bottom-0">
+                    <a href="#" class="video"></a>
+                    <a href="#" class="favorite ms-auto"></a>                              
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf = "realestates.length" >
+            <div class="col-md-6 col-lg-4" *ngFor="let realestate of realestates">
+                
+                <app-cardtype2 [info]="realestate"></app-cardtype2>
+            </div>
+        </div>
+
+        <app-pagination></app-pagination>
+    </div>
+</section>
+
+<section class="section-luxary-homes-blog">
+    <div class="container">
+        <div class="section-title">
+            <h1>Luxury homes blog</h1>
+            <p>Real Estate Tips</p>
+        </div>
+
+        <owl-carousel-o [options]="popularLinksOptions">
+            <ng-template carouselSlide>
+                <div class="blog-item">
+                    <img class="img-responsive" src="../../../assets/img/blog/luxery-homes/img-1.png">
+                    <div class="content">
+                        <div class="title">
+                            <h2>Million Dollar luxury properties for investment in Senegal</h2>
+                        </div>
+                        <div class="description">
+                            <p>Discover premium million dollars properties with undeniable profitability.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="blog-item">
+                    <img class="img-responsive" src="../../../assets/img/blog/luxery-homes/img-2.png">
+                    <div class="content">
+                        <div class="title">
+                            <h2>Prestigious investment in Senegal</h2>
+                        </div>
+                        <div class="description">
+                            <p>Incredible properties with sea views, connection to the nature, luxury design.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="blog-item">
+                    <img class="img-responsive" src="../../../assets/img/blog/luxery-homes/img-3.png">
+                    <div class="content">
+                        <div class="title">
+                            <h2>10 premium activities to do in Senegal</h2>
+                        </div>
+                        <div class="description">
+                            <p>Private tours, lake, lagoon and parks, safari, trek, surf and golf.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="blog-item">
+                    <img class="img-responsive" src="../../../assets/img/blog/luxery-homes/img-1.png">
+                    <div class="content">
+                        <div class="title">
+                            <h2>Million Dollar luxury properties for investment in Senegal</h2>
+                        </div>
+                        <div class="description">
+                            <p>Discover premium million dollars properties with undeniable profitability.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="blog-item">
+                    <img class="img-responsive" src="../../../assets/img/blog/luxery-homes/img-2.png">
+                    <div class="content">
+                        <div class="title">
+                            <h2>Prestigious investment in Senegal</h2>
+                        </div>
+                        <div class="description">
+                            <p>Incredible properties with sea views, connection to the nature, luxury design.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</section>
+
+<section class="section-subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-6">
+                <div class="content">
+                    <div class="section-title">
+                        <h1>Weekly Luxury Newsletter</h1>
+                    </div>
+    
+                    <p>Receive the beautifully curated selection of what’s trending in luxury with inside stories and tips from our experts</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-6">
+                <form id="subscribe-form" class="subscribe-form">
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="email" placeholder="EMAIL">
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>By sharing your email, you agree to our terms of use and privacy.</p>
+                        </div>                        
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

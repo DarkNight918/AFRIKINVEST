@@ -1,0 +1,301 @@
+.section-hero-senegal {
+  padding: 383px 0 226px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../img/senegal-banner.svg') center center no-repeat;
+  background-size: cover;
+
+  p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 16px rgba(51, 51, 51, 0.43);
+    color: #FFFFFF;
+  }
+
+  h1 {
+    margin-bottom: 4px;
+    font-family: 'Buda', cursive;
+    font-size: 113px;
+    font-weight: 300;
+    line-height: 106px;
+    color: #EFEFEF;
+    text-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.43);
+  }
+
+  .search-box {
+    max-width: 400px;
+    margin: 0px auto;
+
+    .search-form {
+      .input-group {
+        background: rgba(255, 255, 255, 0.32);
+        border-radius: 43px;
+
+        input {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0.03em;
+          padding: 8px 0px 8px 18px;
+          border: none;
+          border-radius: 43px;
+          color: #FFF;
+          background-color: transparent;
+        }
+
+        .input-group-text {
+          padding: 0px 28px;
+          border: none;
+          border-radius: 45px;
+          background: url('../../img/icons/search-24.svg') center center no-repeat;
+          background-size: 14.81px;
+          background-color: transparent;
+        }
+      }
+
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #C0C0C0;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #C0C0C0;
+      }
+
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #C0C0C0;
+      }
+
+      p {
+        margin-bottom: 0px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 21.26px;
+        letter-spacing: 0.03em;
+        color: #FFF;
+      }
+    }
+  }
+}
+section.section-dark {
+  padding: 114px 60px 114px 67px;
+  background: #07090B;
+  color: #fff;
+  .section-title {
+    margin-bottom: 57px;
+    h1 {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 27px;
+      line-height: 144.19%;
+      color: #FFFFFF;
+      margin-bottom: 0;
+    }
+  }
+  .image-text {
+    margin-bottom: 66px;
+    .img-sec {
+      img {
+        width: 100%;
+      }
+    }
+    .txt-sec {
+      padding-left: 203px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-top: 95px;
+      p {
+        font-family: Oxygen;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        max-width: 300px;
+        span {
+          color: #C99C73;
+        }
+      }
+    }
+  }
+  .text-image {
+    margin-bottom: 66px;
+    .img-sec {
+      img {
+        width: 100%;
+      }
+    }
+    .txt-sec {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 95px;
+      p {
+        font-family: Oxygen;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        max-width: 300px;
+        margin-bottom: 34px;
+        span {
+          color: #C99C73;
+        }
+      }
+    }
+  }
+  .bottom-text {
+    margin-top: 50px;
+    .left-text, .right-text {
+      max-width: 311px;
+      p {
+        font-family: Oxygen;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        max-width: 300px;
+        margin-bottom: 34px;
+        span {
+          color: #C99C73;
+        }
+      }
+    }
+  }
+  .bottom-text.dsk-hidden {
+    display: none !important;
+  }
+  .container-in-dark.investement {
+    margin-top: 130px;
+    flex-direction: column;
+    row-gap: 31px;
+    margin-bottom: 40px;
+    h3 {
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 27px;
+      line-height: 144.19%;
+      color: #FFFFFF;
+      margin-bottom: 0;
+      a {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #FFFFFF;
+      }
+    }
+    button.btn {
+      border: 1px solid #DADADA;
+      box-sizing: border-box;
+      border-radius: 11px;
+      width: 338px;
+      height: 53px;
+      font-family: Oxygen;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 157.69%;
+      letter-spacing: 0.03em;
+      color: #FFFFFF;
+    }
+    button.btn:hover {
+      background: transparent;
+    }
+  }
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 640px) {
+/*  .section-hero-senegal {
+    padding-bottom: 246px;
+  }
+  section.section-dark {
+    padding: 34px 0;
+    .row {
+      margin: 0;
+    }
+    .section-title {
+      margin-bottom: 28px;
+      h1 {
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+    .image-text {
+      .col-12 {
+        flex-direction: column;
+        .img-sec {
+          width: 100%;
+          img {
+            width: 100%;
+            padding-right: 10px;
+          }
+        }
+        .txt-sec {
+          width: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 35px;
+          p {
+            max-width: 100%;
+            margin-bottom: 31px;
+          }
+        }
+      }
+      .bottom-text.mbl-hidden {
+        display: none !important;
+      }
+      .bottom-text.dsk-hidden {
+        display: flex !important;
+      }
+      .bottom-text {
+        margin-top: 0;
+        flex-direction: column;
+
+        .left-text, .right-text {
+          max-width: 100%;
+        }
+      }
+    }
+    .text-image {
+      .col-12 {
+        flex-direction: column-reverse;
+        margin-top: 38px;
+        .img-sec {
+          width: 100%;
+          img {
+            padding-left: 10px;
+          }
+          .section-title {
+            h1 {
+              text-align: right;
+              padding-right: 10px;
+            }
+          }
+        }
+        .txt-sec {
+          align-items: flex-start;
+          padding-top: 38px;
+          width: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
+          p {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    .container-in-dark.investement {
+      margin-top: 39px;
+      margin-bottom: 82px;
+    }
+  }*/
+}

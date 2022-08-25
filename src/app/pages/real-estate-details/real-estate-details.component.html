@@ -1,0 +1,508 @@
+<section class="section-real-estate-details">
+    <div class="container">
+        <div class="row page-top">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-6">
+                        <a class="back">Back</a>
+                    </div>
+                    <div class="col-6">
+                        <div class="float-end">
+                            <a class="share">Share</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <p>Posted on 10 july, 2022</p>
+            </div>
+        </div>
+        
+        <div class="row overview">
+            <div class="col-md-8">
+                <div class="img-preview">
+                    <img class="img-responsive" src="../../../assets/img/real-estate-details/img-preview-1.png">                            
+                </div>
+                <div class="row carousel-slider">
+                    <div class="col-md-9">
+                        <owl-carousel-o [options]="propertyImagesOptions" #owlCar>
+                            <ng-template carouselSlide>
+                                <div class="img-item">
+                                    <img class="img-responsive" src="../../../assets/img/real-estate-details/carousel/img-1.png">                            
+                                </div>
+                            </ng-template>      
+                            <ng-template carouselSlide>
+                                <div class="img-item">
+                                    <img class="img-responsive" src="../../../assets/img/real-estate-details/carousel/img-2.png">                            
+                                </div>
+                            </ng-template>         
+                            <ng-template carouselSlide>
+                                <div class="img-item">
+                                    <img class="img-responsive" src="../../../assets/img/real-estate-details/carousel/img-3.png">                            
+                                </div>
+                            </ng-template>      
+                            <ng-template carouselSlide>
+                                <div class="img-item">
+                                    <img class="img-responsive" src="../../../assets/img/real-estate-details/carousel/img-4.png">                            
+                                </div>
+                            </ng-template>    
+                            <ng-template carouselSlide>
+                                <div class="img-item">
+                                    <img class="img-responsive" src="../../../assets/img/real-estate-details/carousel/img-2.png">                            
+                                </div>
+                            </ng-template>
+                        </owl-carousel-o>
+                    </div>
+                    <div class="col-6 col-md-3 d-flex align-items-center justify-content-md-center">
+                        <div class="owl-nav">
+                            <div class="owl-prev" (click)="owlCar.prev()"></div>
+                            <div class="owl-next" (click)="owlCar.next()"></div>
+                        </div>
+                    </div>
+                    <div class="controls col-6 d-flex d-md-none align-items-center justify-content-end">
+                        <span>add to favourite</span>                
+                        <a class="favorite"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h1 class="text-center text-md-start">Luxury home In Cap Skiring</h1>
+                <div class="row price">
+                    <div class="col-12">
+                        <strong>Price</strong>
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <p>$90,000</p>
+                            </div>
+                            <div class="flex-shrink-0 text-end">
+                                <div class="chart d-flex float-start">
+                                    <img class="img-responsive" src="../../../assets/img/chart-2.png">
+                                </div>
+                                <div class="btc d-flex float-start align-items-center">
+                                    <i></i>
+                                    <h2>22</h2>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="row parms">
+                    <div class="col-3">
+                        <strong>Bedroooms</strong>
+                        <p>6</p>
+                    </div>
+                    <div class="col-3">
+                        <strong>Bathrooms</strong>
+                        <p>9</p>
+                    </div>
+                    <div class="col-3">
+                        <strong>House m²</strong>
+                        <p>1400</p>
+                    </div>
+                    <div class="col-3">
+                        <strong>Place m²</strong>
+                        <p>2800</p>
+                    </div>
+                </div>
+                <div class="row description">
+                    <div class="col-12">
+                        <strong>Description</strong>
+                        <p>Id auctor tortor metus, odio nullam. Id blandit volutpat eu eleifend aliquam tincidunt vitae sed.
+                            Viverra gravida sit gravida leo vel massa faucibus praesent faucibus. Malesuada eget.</p>
+                        <p>In sed augue eu fringilla viverra purus. Purus ut in leo dignissim dolor morbi. Mi leo ac purus
+                            pharetra, quis purus proin. Mus sapien quis ipsum tincidunt aliquam, accumsan. Hendrerit est eu, eu
+                            nunc, enim. Semper tincidunt vitae quis congue.
+                            Commodo, risus blandit egestas est urna, fermentum. Aliquet velit id aliquet dolor imperdiet nam.
+                            Viverra integer id imperdiet aliquam et lectus porta enim sit.</p>
+                    </div>
+                </div>
+                <div class="row parms">
+                    <div class="col-4">
+                        <strong>Year build</strong>
+                        <p>2021</p>
+                    </div>
+                    <div class="col-4">
+                        <strong>Floors</strong>
+                        <p>1</p>
+                    </div>
+                    <div class="col-4">
+                        <strong>Property type</strong>
+                        <p>Penthouse</p>
+                    </div>
+                </div>
+                <div class="controls d-none d-md-flex align-items-center justify-content-end">
+                    <span>add to favourite</span>                
+                    <a class="favorite"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row amenities">
+            <strong>Amenities</strong>
+            <div class="col-md-6 d-flex">
+                <ul>
+                    <li>Panoramic view</li>
+                    <li>Sea view</li>
+                    <li>Modern</li>
+                </ul>
+                <ul>
+                    <li>Sauna</li>                    
+                </ul>
+                <ul>
+                    <li>Pool</li>
+                    <li>Garage</li>                    
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="controls d-flex align-items-center float-none float-md-end flex-column flex-md-row">
+                    <a>Details</a>
+                    <button class="btn btn-outline-primary">Smart Contract</button>
+                    <button class="btn btn-primary">Purchase property by crypto</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row location">
+            <div class="col-md-6">
+                <strong>Location</strong>
+            </div>
+            <div class="col-md-6">
+                <div class="map-pin float-md-end">
+                    <p>Route des Almadies, Dakar</p>
+                    <a class="float-end">Share</a>
+                </div>
+            </div>
+            <div class="col-12 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3539.812628729253!2d153.014155!3d-27.4750921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a0835840a2f%3A0xdd5e3f5c208dc0e1!2sMelbourne+St%2C+South+Brisbane+QLD+4101%2C+Australia!5e0!3m2!1sen!2sin!4v1492257477691"></iframe>                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-trending">
+    <div class="container">
+        <div class="section-title">
+            <h1>News & Trending</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="project-img position-relative">
+                            <img class="img-responsive" src="../../../assets/img/news/img-1.png">
+                            <div class="controls d-flex align-items-center position-absolute start-0 end-0 bottom-0 ">
+                                <a href="#" class="favorite ms-auto"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>House in Senegal</h3>
+                                <div class="chart d-flex">
+                                    <img class="img-responsive" src="../../../assets/img/chart.png">
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 text-end">
+                                <h2>$90,000</h2>
+                                <div class="btc d-flex float-end align-items-center">
+                                    <i></i>
+                                    <h2>789</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="project-img position-relative">
+                            <span class="badge">NEW</span>
+                            <img class="img-responsive" src="../../../assets/img/news/img-2.png">
+                            <div class="controls d-flex align-items-center position-absolute start-0 end-0 bottom-0">
+                                <a href="#" class="video"></a>
+                                <a href="#" class="favorite ms-auto"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>Apartment in Senegal</h3>
+                                <div class="chart d-flex">
+                                    <img class="img-responsive" src="../../../assets/img/chart.png">
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 text-end">
+                                <h2>$80,678</h2>
+                                <div class="btc d-flex float-end align-items-center">
+                                    <i></i>
+                                    <h2>32</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="project-img position-relative">
+                            <img class="img-responsive" src="../../../assets/img/news/img-3.png">
+                            <div class="controls d-flex align-items-center position-absolute start-0 end-0 bottom-0">
+                                <a href="#" class="favorite ms-auto"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>Penthouse in Senegal</h3>
+                                <div class="chart d-flex">
+                                    <img class="img-responsive" src="../../../assets/img/chart.png">
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 text-end">
+                                <h2>$40,999</h2>
+                                <div class="btc d-flex float-end align-items-center">
+                                    <i></i>
+                                    <h2>12</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="project-img position-relative">
+                            <img class="img-responsive" src="../../../assets/img/news/img-4.png">
+                            <div class="controls d-flex align-items-center position-absolute start-0 end-0 bottom-0">
+                                <a href="#" class="video"></a>
+                                <a href="#" class="favorite ms-auto"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>Villa in Senegal</h3>
+                                <div class="chart d-flex">
+                                    <img class="img-responsive" src="../../../assets/img/chart.png">
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 text-end">
+                                <h2>$190,000</h2>
+                                <div class="btc d-flex float-end align-items-center">
+                                    <i></i>
+                                    <h2>129</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center justify-content-md-start">
+                <a class="btn btn-primary" routerLink="properties" >View all properties</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="row contact-details">
+                                <div class="section-title">
+                                    <h1>Contact Us</h1>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>PHONE</p>
+                                        <h1 class="phone">+ 89 (3) 7836 3674</h1>                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>EMAIL</p>
+                                        <h1 class="email">investsenegal@estate.com</h1>                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2 class="timings">Mon—Fri: 6.00am - 18.00pm <br>Sat—Sun: 9.00am - 13.00pm</h2>                                    
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2 class="address">1901 Thornridge Cir. Shiloh, <br>Hawaii 81063</h2>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <h1 class="brand d-none d-md-block">Afrik Invest</h1>
+                        </div>
+                        <div class="col-md-5">
+                            <form class="contact-form">
+                                <div class="form-content">
+                                    <div class="mb-3">
+                                        <label for="nameInput" class="form-label">*Name</label>
+                                        <input type="text" class="form-control" id="nameInput">                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="emailInput" class="form-label">*Email</label>
+                                        <input type="email" class="form-control" id="emailInput">                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phoneInput" class="form-label">*Phone</label>
+                                        <input type="text" class="form-control" id="phoneInput">                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="messageInput" class="form-label">*Message</label>
+                                        <textarea class="form-control" id="messageInput"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send</button>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="notificateionRadio" id="notificateionRadio">
+                                    <label class="form-check-label" for="notificateionRadio">Notify me via email when similar linstings appear</label>                                    
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="shareRadio" id="shareRadio">
+                                    <label class="form-check-label" for="shareRadio">By sharing your email, you agree to our <a>Terms of use and Privacy</a>.</label>                                    
+                                </div>
+                            </form>
+                            <h1 class="brand text-center d-block d-md-none">Afrik Invest</h1>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row">
+                        <div class="col-md-8">
+                            <h1 class="brand">Afrik Invest</h1>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column justify-content-center">
+                            
+                        </div>
+                    </div> -->
+                </div>
+            </div>            
+        </div>
+    </div>    
+</section>
+
+<section class="section-luxary-homes-blog">
+    <div class="container">
+        <div class="section-title">
+            <h1>Resources</h1>
+            <p>Real Estate Tips</p>
+        </div>
+
+        <owl-carousel-o [options]="popularLinksOptions">
+            <ng-template carouselSlide>
+                <div class="blog-item">
+                    <img class="img-responsive" src="../../../assets/img/blog/luxery-homes/img-1.png">
+                    <div class="content">
+                        <div class="title">
+                            <h2>Million Dollar luxury properties for investment in Senegal</h2>
+                        </div>
+                        <div class="description">
+                            <p>Discover premium million dollars properties with undeniable profitability.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="blog-item">
+                    <img class="img-responsive" src="../../../assets/img/blog/luxery-homes/img-2.png">
+                    <div class="content">
+                        <div class="title">
+                            <h2>Prestigious investment in Senegal</h2>
+                        </div>
+                        <div class="description">
+                            <p>Incredible properties with sea views, connection to the nature, luxury design.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="blog-item">
+                    <img class="img-responsive" src="../../../assets/img/blog/luxery-homes/img-3.png">
+                    <div class="content">
+                        <div class="title">
+                            <h2>10 premium activities to do in Senegal</h2>
+                        </div>
+                        <div class="description">
+                            <p>Private tours, lake, lagoon and parks, safari, trek, surf and golf.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="blog-item">
+                    <img class="img-responsive" src="../../../assets/img/blog/luxery-homes/img-1.png">
+                    <div class="content">
+                        <div class="title">
+                            <h2>Million Dollar luxury properties for investment in Senegal</h2>
+                        </div>
+                        <div class="description">
+                            <p>Discover premium million dollars properties with undeniable profitability.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="blog-item">
+                    <img class="img-responsive" src="../../../assets/img/blog/luxery-homes/img-2.png">
+                    <div class="content">
+                        <div class="title">
+                            <h2>Prestigious investment in Senegal</h2>
+                        </div>
+                        <div class="description">
+                            <p>Incredible properties with sea views, connection to the nature, luxury design.</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</section>
+
+<section class="section-subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-6">
+                <div class="content">
+                    <div class="section-title">
+                        <h1>Weekly Luxury Newsletter</h1>
+                    </div>
+
+                    <p>Receive the beautifully curated selection of what’s trending in luxury with inside stories and
+                        tips from our experts</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-6">
+                <form id="subscribe-form" class="subscribe-form">
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="email" placeholder="EMAIL">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>By sharing your email, you agree to our terms of use and privacy.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,35 @@
+<div *ngIf="info" class="card">
+    <div class="card-body">
+        <div class="project-img position-relative">
+            
+            <span *ngIf="info.isNew" class="badge">NEW</span>
+            <a class="d-block" routerLink="/real-estate-details">
+                <img class="img-responsive" src="../../../assets/img/{{info?.img}}">
+            </a>
+            <div class="controls d-flex align-items-center position-absolute start-0 end-0 bottom-0 ">
+                <a href="#" *ngIf="info.isVideo" class="video"></a>
+                <a href="#" class="favorite ms-auto"></a>
+            </div>
+        </div>                        
+    </div>
+    <div class="card-footer">
+        <div class="d-flex">
+            <div class="flex-grow-1">
+                <h2>${{info?.price | number:'2.'}}</h2>
+
+            </div>
+            <div class="chart d-flex" *ngIf="this.commonService.pricePoints">
+                <app-kline-chart-iteam-thumbnail class="chart1" [goodPrice] ="this.info?.price" [isPositive]="this.commonService.floatPercent < 0" [isNegative]="this.commonService.floatPercent > 0" [pricePoints]="this.commonService.pricePoints"></app-kline-chart-iteam-thumbnail>
+             </div>
+            <div class="flex-shrink-0 text-end">
+                    <div class="btc d-flex float-start align-items-center">
+                    <img src="../assets/img/icons/{{this.commonService.currentCrypto}}.png">&nbsp;&nbsp;<h2>{{(info?.price! / this.commonService.currency) | number: '.2'}}</h2>
+                </div>
+            </div>
+        </div>
+        <h3><a class="d-block" routerLink="/real-estate-details">{{info?.name}}</a></h3>  
+        <ul class="facilities">
+            <li *ngFor="let detail of info?.details">{{detail}}</li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,736 @@
+<section class="section-hero-main justify-content-center">
+    <div class="container container-1">
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <div class="d-flex position-relative">
+                        <div class="play">
+                            <div class="outer">
+                                <button class="btn"></button>
+                            </div>
+                        </div>
+                        <img class="img-responsive" src="../../../assets/img/rectangle.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container container-2">
+        <div class="row">
+            <div class="col-12 order-2 col-md-6 order-md-1">
+                <div class="content-1">
+                    <div class="overlay"></div>
+                    <p>LUXURY VILLAS <br> IN SENEGAL</p>    
+                </div>
+
+                <div class="content-2">
+                    <div class="overlay"></div>
+                    <p>FIRST CRYPTO REAL <br> ESTATE INVESTMENT</p>                       
+                </div>
+            </div>
+            <div class="col-12 order-1 col-md-6 order-md-2">
+                <div class="search-box">
+                    <h1>EXPLORE 2000+ LUXURY <br> HOMES,  APARTMENTS AND <br> VILLAS FOR SALE IN SENEGAL</h1>
+                    <form id="search-form" class="search-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Region  / Zip  /  Price....">
+                            <span class="input-group-text"></span>
+                        </div>
+                        <p>*only crypto payment</p>
+                    </form>                    
+                </div>
+            </div>
+        </div>
+    </div>   
+</section>
+
+<section class="section-popular-searches">
+    <div class="container">
+        <div class="section-title">
+            <h1>Popular Searches</h1>
+            <p class="d-block d-md-none">{{activePopularSearchesSlide}}/<span>2</span></p>
+        </div>
+
+        <owl-carousel-o class="d-flex d-md-none" [options]="popularSearchesOptions" (translated)="getActivePopularSearchesSlide($event)">
+            <ng-template carouselSlide>
+                <a href="#">
+                    <div class="search-item">
+                        <p>Country house in Saly</p>
+        
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>33 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="search-item">
+                        <p>Townhouse in Senegal</p>
+        
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>67 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="search-item">
+                        <p>Designer villas in Somone</p>
+        
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>12 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="search-item">
+                        <p>Designer villas in Somone</p>
+        
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>12 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </ng-template>
+            <ng-template carouselSlide>
+                <a href="#">
+                    <div class="search-item">
+                        <p>Luxury home In Cap Skiring</p>
+        
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>78 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="search-item">
+                        <p>Elegant style view in Casamance</p>
+        
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>54 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="search-item">
+                        <p>Elegant style view in Casamance</p>
+        
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>54 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="search-item">
+                        <p>Exclusive home in Dakar</p>
+        
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>45 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </ng-template>
+        </owl-carousel-o>
+
+        <div class="row d-none d-md-flex">
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <div class="search-item">
+                        <p>Country house in Saly</p>
+
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>33 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <div class="search-item">
+                        <p>Townhouse in Senegal</p>
+
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>67 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <div class="search-item">
+                        <p>Penthouse in central Dakar</p>
+
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>123 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <div class="search-item">
+                        <p>Designer villas in Somone</p>
+
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>12 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>         
+
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <div class="search-item">
+                        <p>Luxury home In Cap Skiring</p>
+
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>78 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <div class="search-item">
+                        <p>House with exceptional views in Saly</p>
+
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>77 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <div class="search-item">
+                        <p>Elegant style view in Casamance</p>
+
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>54 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#">
+                    <div class="search-item">
+                        <p>Exclusive home in Dakar</p>
+
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>45 listings</h3>
+                            </div>
+                            <div class="flex-shrink-0 align-self-center">
+                                <img src="../../../assets/img/icons/arrow-right-24.svg">                                
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center justify-content-md-start">
+                <a class="btn btn-primary" routerLink="properties" >View all properties</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-trending">
+    <div class="container">
+        <div class="section-title">
+            <h1>News & Trending</h1>
+        </div>
+        <div class="row" *ngIf = "realestates.length" >
+            <div class="col-md-6 col-lg-3" *ngFor="let realestate of realestates">
+                
+                <app-cardtype1 [info]="realestate"></app-cardtype1>
+            </div>
+            <!-- <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="project-img position-relative">
+                            <img class="img-responsive" src="../../../assets/img/news/img-1.png">
+                            <div class="controls d-flex align-items-center position-absolute start-0 end-0 bottom-0 ">
+                                <a href="#" class="favorite ms-auto"></a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>    </h3>   
+                                <div class="chart d-flex">
+                                    <img class="img-responsive" src="../../../assets/img/chart.png">
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 text-end">
+                                <h2>$90,000</h2>
+                                <div class="btc d-flex float-end align-items-center">
+                                    <i></i><h2>789</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="project-img position-relative">
+                            <span class="badge">NEW</span>
+                            <img class="img-responsive" src="../../../assets/img/news/img-2.png">
+                            <div class="controls d-flex align-items-center position-absolute start-0 end-0 bottom-0">
+                                <a href="#" class="video"></a>
+                                <a href="#" class="favorite ms-auto"></a>                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>Apartment in Senegal</h3>   
+                                <div class="chart d-flex">
+                                    <img class="img-responsive" src="../../../assets/img/chart.png">
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 text-end">
+                                <h2>$80,678</h2>
+                                <div class="btc d-flex float-end align-items-center">
+                                    <i></i><h2>32</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="project-img position-relative">
+                            <img class="img-responsive" src="../../../assets/img/news/img-3.png">
+                            <div class="controls d-flex align-items-center position-absolute start-0 end-0 bottom-0">
+                                <a href="#" class="favorite ms-auto"></a>                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>Penthouse in Senegal</h3>   
+                                <div class="chart d-flex">
+                                    <img class="img-responsive" src="../../../assets/img/chart.png">
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 text-end">
+                                <h2>$40,999</h2>
+                                <div class="btc d-flex float-end align-items-center">
+                                    <i></i><h2>12</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="project-img position-relative">
+                            <img class="img-responsive" src="../../../assets/img/news/img-4.png">
+                            <div class="controls d-flex align-items-center position-absolute start-0 end-0 bottom-0">
+                                <a href="#" class="video"></a>
+                                <a href="#" class="favorite ms-auto"></a>                              
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h3>Villa in Senegal</h3>   
+                                <div class="chart d-flex">
+                                    <img class="img-responsive" src="../../../assets/img/chart.png">
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0 text-end">
+                                <h2>$190,000</h2>
+                                <div class="btc d-flex float-end align-items-center">
+                                    <i></i><h2>129</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<section class="section-transactions">
+    <div class="container-fluid px-0">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 info-box">
+                <div class="content h-100">
+                    <h1>Cryptocurrency payment and <br>How we process the transactions</h1>
+                    
+                    <p>Cryptocurrency is a kind of decentralized, online payment system that operates with the help of a
+                        blockchain. Crypto can be used for buying goods and services in the same manner as real money.
+                    </p>
+                    <p>You don't need a trusted third party like a credit card company or a bank. Then these transfers
+                        are secured with a public key, private key and different forms of incentive systems.</p>
+                    <p>Once you have selected the property that suits you best, make an offer through our real estate
+                        broker. Safely transfer the cryptocurrency (Bitcoin, Ethereum, Usdt, or Cardano) to complete the
+                        payment.</p>
+
+                    <div class="d-flex align-items-center controls">
+                        <div class="flex-shrink">
+                            <button class="btn btn-outline-primary">Smart Contract</button>
+                        </div>
+                        <div class="flex-grow-1 align-self-center">
+                            <a class="more" href="#">Details</a>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+            <div class="col-sm-12 col-lg-6 px-0 img-box">
+                <div class="content h-100">
+                    <div class="d-flex align-items-center controls">
+                        <p>*guarantee security payment</p> 
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-popular-links">
+    <div class="container">
+        <div class="section-title">
+            <h1>Popular Links</h1>
+            <p class="d-block d-md-none">{{activePopularLinksSlide}}/<span>4</span></p>
+        </div>
+    
+        <owl-carousel-o class="d-flex d-md-none" [options]="popularLinksOptions" (translated)="getActivePopularLinksSlide($event)">
+            <ng-template carouselSlide>
+                <div class="link-block">
+                    <h2>Properties in Dakar</h2>
+                    <ul>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                    </ul>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="link-block">
+                    <h2>Luxury villas in Saly</h2>
+                    <ul>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                    </ul>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="link-block">
+                    <h2>Penthouse in Senegal</h2>
+                    <ul>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                    </ul>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="link-block">
+                    <h2>Apartment with sea view</h2>
+                    <ul>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                    </ul>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    
+        <div class="row d-none d-md-flex">
+            <div class="col-md-6 col-lg-3 d-flex justify-content-lg-start">
+                <div class="link-block">
+                    <h2>Properties in Dakar</h2>
+                    <ul>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex justify-content-lg-center">
+                <div class="link-block">
+                    <h2>Luxury villas in Saly</h2>
+                    <ul>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex justify-content-lg-center">
+                <div class="link-block">
+                    <h2>Penthouse in Senegal</h2>
+                    <ul>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex justify-content-lg-end">
+                <div class="link-block">
+                    <h2>Apartment with sea view</h2>
+                    <ul>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                        <li><a href="#">Private house for sale</a></li>
+                        <li><a href="#">Saint villas for sale</a></li>
+                        <li><a href="#">Estena apartments for sale</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-6">
+                <div class="content">
+                    <div class="section-title">
+                        <h1>Weekly Luxury Newsletter</h1>
+                    </div>
+    
+                    <p>Receive the beautifully curated selection of what’s trending in luxury with inside stories and tips from our experts</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-6">
+                <form id="subscribe-form" class="subscribe-form">
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="email" placeholder="EMAIL">
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>By sharing your email, you agree to our terms of use and privacy.</p>
+                        </div>                        
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-investment">
+    <div class="container container-1">
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <div class="section-title">
+                        <h1>Investment in Senegal</h1>
+                    </div>
+                    
+                    <p>The hospitality of the population is legendary, the Senegalese "Téranga" has many benefits, and
+                        the "World Economic Forum" ranked <span>Senegal the 6th most welcoming country in the
+                            world,</span> according to tourists. </p>
+                </div>
+            </div>
+        </div>   
+    </div>
+    
+    <div class="container container-2">
+        <div class="row">
+            <div class="col-4 left-bg d-none d-md-flex align-items-center justify-content-start px-0">
+                <img class="img-responsive" src="../../../assets/img/map.png">
+            </div>
+            <div class="col-12 col-md-8 px-md-0">
+                <div class="content-1">
+                    <p>The population <span>is young, dynamic and tolerant.</span> The climate is pleasant and
+                        the sun shines all year round. The country offers a secure, peaceful, therefore ideal
+                        living environment to work and to invest.</p>
+                    <p>Senegal is known as a stable country and is an example around the world regarding its
+                        moderate level of risk according to “Credit Risk International” (CRI). The country has a
+                        long tradition of peace and democracy. </p>
+                </div>
+                
+                <div class="center-bg d-flex d-md-none align-items-center justify-content-start">
+                    <img src="../../../assets/img/map.png">
+                </div>
+
+                <div class="content-2">
+                    <p>This peaceful climate has helped to create an appropriate business environment for investment
+                        and has increased foreign direct investment (FDI) flows.
+                        Known as a crossroads of West Africa, <span>Senegal is a country of multiple influences
+                            gathering modernity and respect for traditions.</span> A place of exchange where any
+                        investor, regardless of origin, is free to settle, prosper and repatriate capital.</p>
+                    <br>
+                    <p class="d-none d-md-block">Investing in luxury real estate in Senegal then becomes a necessity.</p>
+
+                    <button class="btn">Details</button>
+                </div>
+            </div>
+        </div>
+    </div>        
+
+    <div class="container container-3">
+        <img class="img-responsive" src="../../../assets/img/investment-bg.png">
+    </div>   
+</section>

@@ -1,0 +1,109 @@
+<section class="section-hero-aboutus">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto text-center">
+        <p>About us</p>
+        <h1>Afrik Invest</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-dark-about">
+
+  <div class="container-in-dark p-0 col-12 who-we-are">
+    <div class="row text-image">
+      <div class="col-12 p-0 d-flex">
+        <div class="col-7 txt-sec">
+          <h3>Who We Serve</h3>
+          <p style="text-transform: uppercase;">
+            We help investors to find their dream business through our "international network of entrepreneurs" for digital transformation, real-estate and luxury living.
+          </p>
+          <p>
+            Afrik Invest Group is a multinational, multi-disciplinary and multi-cultural consulting and technology solution provider to help investors and businesses in Africa succeed and grow, and also helps Africa become a big player in the world economy through innovation and technology.
+          </p>
+          <p>
+            Through our partnership with international networks, we have the in-depth local market and sector expertise to help you make the right decisions and identify opportunities in Africa. We serve as a one-stop shop for all your African growth strategy needs.
+          </p>
+          <p>
+            Africa is the next great opportunity for investors, creating a new model of business, taking advantage of Africa's growth markets.
+          </p>
+        </div>
+        <div class="col-5 p-0 img-sec">
+          <img src="assets/img/who-we-serve.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fullscreen slides">
+    <img src="assets/img/slide-1.png">
+    <img src="assets/img/slide-2.png">
+    <img src="assets/img/slide-3.png">
+    <img src="assets/img/slide-4.png">
+  </div>
+
+  <div class="our-mission col-12 d-flex ">
+    <div class="col-8 text-sec">
+      <h3>Our mission</h3>
+      <div class="slide-sec">
+        <img class="quotes" src="assets/img/quotes.png" />
+        <div class="slide-single">
+          <p>{{ourMission[selectedMission].content}}</p>
+          <div class="attrs">
+            <p class="name">{{ourMission[selectedMission].name}}</p>
+            <p class="title">{{ourMission[selectedMission].title}}</p>
+          </div>
+        </div>
+        <div class="act-nav dsk">
+          <img src="assets/img/arrow-left.png" (click)="prevMission()" />
+          <img src="assets/img/arrow-right.png" (click)="nextMission()" />
+        </div>
+      </div>
+    </div>
+    <div class="col-4 rt-img d-flex justify-content-end align-items-center">
+      <img [src]="ourMission[selectedMission].profilePic" />
+      <div class="act-nav mbl">
+        <img src="assets/img/arrow-left.png" (click)="prevMission()"/>
+        <img src="assets/img/arrow-right.png" (click)="nextMission()"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="investment-objective col-12">
+      <h3>Our main investment objectives:</h3>
+    <div class="objectives-points">
+      <p><span>1.</span> Increase the profitability</p>
+      <p><span>2.</span> Increase the market share</p>
+      <p><span>3.</span> Increase the return on investment (ROI)</p>
+      <p><span>4.</span> Reduce the risk of failure</p>
+      <p><span>5.</span> Increase the market value of the company</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-footer-aboutus">
+  <div class="container-ftr">
+    <h1>Contact us</h1>
+
+    <div class="contact d-flex align-items-center">
+      <h2 class="d-flex flex-column">
+        <span>PHONE</span>
+        <a href="tel:+ 89 (3) 7836 3674">+ 89 (3) 7836 3674</a>
+      </h2>
+      <h2 class="d-flex flex-column">
+        <span>EMAIL</span>
+        <a href="mailto:investsenegal@estate.com">investsenegal@estate.com</a>
+      </h2>
+    </div>
+    <div class="timings d-flex align-items-center">
+      <h3 class="d-flex flex-column">
+        <span>Mon—Fri: 6.00am - 18.00pm</span>
+        <span>Sat—Sun: 9.00am - 13.00pm</span>
+      </h3>
+      <h3 class="d-flex flex-column">
+        <span>1901 Thornridge Cir. Shiloh,</span>
+        <span>Hawaii 81063</span>
+      </h3>
+    </div>
+  </div>
+</section>
